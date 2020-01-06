@@ -1,0 +1,143 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(7, 172, 184, 0.219);
+    width: 950px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#entete {
+    border-bottom: 1px solid #2c8d9e;
+    ;
+}
+
+#flex-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    background-color: #7d5d3b;
+    border-radius: 3px;
+    border: 1px solid #54381e;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: montserat;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #4d3534;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+    background-color: #634b30;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+    background-color: #297480;
+    margin-top: 10px;
+}
+
+footer div {
+    padding: 10px;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contener-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#validCommande {
+    margin-top: 5%;
+}
+
+
+
+
+/* début css grid */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: .5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+
+/* hover styles */
+.location-listing {
+    position: relative;
+}
+
+.location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.location-image p {
+    margin-top: 10%;
+}
+
+.location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90, 0, 10, 0.4);
+    color: white;
+
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
